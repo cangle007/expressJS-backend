@@ -9,6 +9,7 @@ const morgan = require('morgan'); //HTTP request logger middleware for node.js. 
 const cors = require('cors'); //It is a standard for allowing browsers to request resources from apis on other domains.
 const path = require('path'); //To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
 
+//why do we need this?
 switch (process.env.NODE_ENV) {
   case 'development':
     app.use(morgan('dev'));
